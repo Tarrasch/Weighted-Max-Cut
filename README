@@ -9,6 +9,30 @@ Question 1:
     
     The results are in logFile.txt, and the implementations are in the
     .m-files that template assumed them to be in.
-    
+
+	I tested the files (automatically) using runAll.m which looks
+	for the data files in the data folder, runAll used template.m.
+        
 Question 2:
    
+	I didn't use the template.m to test for the two files.
+	(I didn't understand why hier_sdp was commented out in template.m)
+	
+	Instead I ran them manually and here are the results.
+	
+	small_W.txt:
+		gw_assign:	c=52	(This will change since it uses random)
+		hier_sdp:	c=31
+		
+	pw01_100.7:
+		gw_assign:	c=1984	(This will change since it uses random)
+		hier_sdp:	c=1990
+		
+	I used method='average' in linkage() function.
+	
+	Hierarchial clustering seem to do as good as random-vector
+	method for the moderate graph, but do quite bad for the
+	small graph.
+	
+	One should however not draw statistical conclusions based on
+	single samples!

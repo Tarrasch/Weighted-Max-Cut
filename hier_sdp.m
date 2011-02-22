@@ -17,7 +17,7 @@ catch whatever
 end
 
 D = pdist(V);
-L = linkage(D, 'centroid');
+L = linkage(D, 'average');
 C = cluster(L, 'maxclust', 2);
 
 dendrogram(L);

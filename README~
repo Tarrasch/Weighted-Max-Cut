@@ -9,55 +9,31 @@ Question 1:
     
     The results are in logFile.txt, and the implementations are in the
     .m-files that template assumed them to be in.
-    
+
+	I tested the files (automatically) using runAll.m which looks
+	for the data files in the data folder, runAll used template.m.
+        
 Question 2:
    
-    I've plotted and printscreened the plot. See plot_classifiers.png.
-    I've highlighted the dots by circling them.
-
-    The linearclassifier just outputs a garbage line, and it's easy to see
-    in many ways. Firstly you see it on the plotted graph, secondly
-    it puts delta = 1 and w to be very small. Therfor all equestion just say
-    almost 0 >= 0, it's not exactly zeroes but rounding errors make it so.
-    
-    The max margin classifier with soft margins is however interesting.
-    It's plotted as Q2 describes in the same screenshot plot_classifiers.png.
-    
-    To reproduce the graphs itself, just run linearclassier AND mmclassifier
-    without clearing the graph inbetween.
-    
-Question 3:
-
-    The hard classifiers creates no line. w = [NaN NaN]'.
-    Its simlpy impossible to have all dots over at one side of ANY line.
-    
-    As for experimenting with the C value. I experiment with both
-    very small and very large C:
-    
-        * The given line for C = 1 is the same as for C = 1e40, even though
-          the cvx solver repors no solution. And it also gives the same line
-          (by same i mean same when inspected on the plot) for any value of
-          C >= 1. That means C = 1 is quite high.
-          
-        * For low C, it also acts in an unexpected way, the new tactic relies
-          on to 'fight off' the constraints simply by eliminating them with
-          xi. Furthermore it decides to put w = 0 and b = 1 so it only needs
-          to 'fight off' 44 constraints instead of 99 half constraints. The lhs
-          will be 1 on 45 constraints if b = 1 and Y for those constraints is 1.
-          When it takes care for the 44 constraints it simply puts xi = 2 for
-          those constraints.
-          
-          Normally you would expect normal behaviour in having all lhs almost
-          equal to 1 simlpy by seperating the lines. But with such a veery low
-          punishment it decides to satisfy the constraints in a way that
-          produces a pure garbage resulting line.
-    
-    As for sensibles C, that is C is between 0.01 and 1, we get results like
-    are fine looking, I've plotted 3 lines, C = 0.01, 0.1 and 1 in the same
-    plot, please see:
-    (Gree line <=> C = 0.01, red <=> C = 1)
-    You can reproduce the screenshot by running experimentc.m.
-
-
-
-
+	I didn't use the template.m to test for the two files.
+	(I didn't understand why hier_sdp was commented out in template.m)
+	
+	Instead I ran them manually and here are the results.
+	
+	small_W.txt:
+		gw_assign:	c=52	(This will change since it uses random)
+		hier_sdp:	c=31
+		
+	pw01_100.7:
+		gw_assign:	c=1984	(This will change since it uses random)
+		hier_sdp:	c=1990
+		
+	I used method='average' in linkage() function.
+	
+	Small disussion:
+	Hierarchial clustering seem to do as good as random-vector
+	method for the moderate graph, but do quite bad for the
+	small graph.
+	
+	One should however not draw statistical conclusions based on
+	single samples!
