@@ -40,5 +40,8 @@ result(3).method = 'gw_assign'; result(3).assignment = s; result(3).cost = c;
 %% This function has to be implemented
 % result(4).method = 'hier_sdp'; % result(4).assignment = s2; % result(4).cost = c2 ; 
 % fprintf(fid, 'file: %s hier_sdp: %g\n', fileName,  c2);
+
+
+
 fclose(fid);
 end
