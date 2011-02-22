@@ -17,10 +17,10 @@ catch whatever
 end
 
 D = pdist(V);
-L = linkage(D);
+L = linkage(D, 'centroid');
 C = cluster(L, 'maxclust', 2);
 
-dendrogram(L)
+dendrogram(L);
 
 s = zeros(n,1);
 for i = 1:n
