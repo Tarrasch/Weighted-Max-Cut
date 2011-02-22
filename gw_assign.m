@@ -1,4 +1,4 @@
-function [s, c]=SDPrelaxation(W)
+function [s, c]=gw_assign(W)
 
 [n, ~] = size(W);
 

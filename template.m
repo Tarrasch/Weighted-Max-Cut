@@ -1,4 +1,4 @@
-function [result]=problem2(fileName, logFile)
+function [result]=template(fileName, logFile)
 % Example: result = problem2('mac/rudy/pw01_100.7', 'latest.log');
  %
 % You have to implement:
