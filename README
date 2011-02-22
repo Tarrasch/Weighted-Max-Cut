@@ -1,0 +1,14 @@
+Weighted Max-Cut
+
+This is a document that answers the questions in the assignment.
+
+Question 1:
+
+    I've implemented the three functions and they get results that seem
+    to sensible in comparision to each other.
+    
+    The results are in logFile.txt, and the implementations are in the
+    .m-files that template assumed them to be in.
+    
+Question 2:
+   
