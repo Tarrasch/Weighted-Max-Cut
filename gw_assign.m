@@ -9,7 +9,11 @@ cvx_begin sdp
     X >= 0;
 cvx_end
 
-V = chol(X, 'lower');
+try 
+    V = chol(X);
+catch whatever
+    V = X;
+end
 s = sign(V*randn(n,1));
 
 c = calcCost(W, s);

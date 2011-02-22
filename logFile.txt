@@ -1,0 +1,101 @@
+file: small_W.txt random_assign: 56
+file: small_W.txt greedy_assign cost: 79
+file: small_W.txt gw_assign cost: 79
+file: mac/rudy/pw01_100.0 random_assign: 1327
+file: mac/rudy/pw01_100.0 greedy_assign cost: 1812
+file: mac/rudy/pw01_100.0 random_assign: 1410
+file: mac/rudy/pw01_100.0 greedy_assign cost: 1812
+file: mac/rudy/pw01_100.0 random_assign: 1412
+file: mac/rudy/pw01_100.0 greedy_assign cost: 1812
+file: mac/rudy/pw01_100.0 random_assign: 1245
+file: mac/rudy/pw01_100.0 greedy_assign cost: 1812
+file: mac/rudy/pw01_100.0 random_assign: 1404
+file: mac/rudy/pw01_100.0 greedy_assign cost: 1812
+file: mac/rudy/pw01_100.0 gw_assign cost: 1863
+file: mac/rudy/pw01_100.1 random_assign: 1268
+file: mac/rudy/pw01_100.1 greedy_assign cost: 1863
+file: mac/rudy/pw01_100.1 gw_assign cost: 1927
+file: mac/rudy/pw01_100.2 random_assign: 1359
+file: mac/rudy/pw01_100.2 greedy_assign cost: 1887
+file: mac/rudy/pw01_100.2 gw_assign cost: 1972
+file: mac/rudy/pw01_100.3 random_assign: 1393
+file: mac/rudy/pw01_100.3 greedy_assign cost: 1921
+file: mac/rudy/pw01_100.3 gw_assign cost: 1988
+file: mac/rudy/pw01_100.4 random_assign: 1319
+file: mac/rudy/pw01_100.4 greedy_assign cost: 1834
+file: mac/rudy/pw01_100.4 gw_assign cost: 1918
+file: mac/rudy/pw01_100.5 random_assign: 1406
+file: mac/rudy/pw01_100.5 greedy_assign cost: 1879
+file: mac/rudy/pw01_100.5 gw_assign cost: 2023
+file: mac/rudy/pw01_100.6 random_assign: 1328
+file: mac/rudy/pw01_100.6 greedy_assign cost: 1926
+file: mac/rudy/pw01_100.6 gw_assign cost: 1938
+file: mac/rudy/pw01_100.7 random_assign: 1413
+file: mac/rudy/pw01_100.7 greedy_assign cost: 1966
+file: mac/rudy/pw01_100.7 gw_assign cost: 2008
+file: mac/rudy/pw01_100.8 random_assign: 1204
+file: mac/rudy/pw01_100.8 greedy_assign cost: 1851
+file: mac/rudy/pw01_100.8 gw_assign cost: 1865
+file: mac/rudy/pw01_100.9 random_assign: 1300
+file: mac/rudy/pw01_100.9 greedy_assign cost: 1881
+file: mac/rudy/pw01_100.9 gw_assign cost: 1940
+file: mac/rudy/pw05_100.0 random_assign: 6756
+file: mac/rudy/pw05_100.0 greedy_assign cost: 7883
+file: mac/rudy/pw05_100.0 gw_assign cost: 8087
+file: mac/rudy/pw05_100.1 random_assign: 6659
+file: mac/rudy/pw05_100.1 greedy_assign cost: 7619
+file: mac/rudy/pw05_100.1 gw_assign cost: 7869
+file: mac/rudy/pw05_100.2 random_assign: 6864
+file: mac/rudy/pw05_100.2 greedy_assign cost: 7834
+file: mac/rudy/pw05_100.2 gw_assign cost: 7873
+file: mac/rudy/pw05_100.3 random_assign: 6928
+file: mac/rudy/pw05_100.3 greedy_assign cost: 7810
+file: mac/rudy/pw05_100.3 gw_assign cost: 8036
+file: mac/rudy/pw05_100.4 random_assign: 7012
+file: mac/rudy/pw05_100.4 greedy_assign cost: 7704
+file: mac/rudy/pw05_100.4 gw_assign cost: 7947
+file: mac/rudy/pw05_100.5 random_assign: 6715
+file: mac/rudy/pw05_100.5 greedy_assign cost: 7819
+file: mac/rudy/pw05_100.5 gw_assign cost: 8034
+file: mac/rudy/pw05_100.6 random_assign: 6731
+file: mac/rudy/pw05_100.6 greedy_assign cost: 7839
+file: mac/rudy/pw05_100.6 gw_assign cost: 8087
+file: mac/rudy/pw05_100.7 random_assign: 6770
+file: mac/rudy/pw05_100.7 greedy_assign cost: 7835
+file: mac/rudy/pw05_100.7 gw_assign cost: 7907
+file: mac/rudy/pw05_100.8 random_assign: 6901
+file: mac/rudy/pw05_100.8 greedy_assign cost: 7824
+file: mac/rudy/pw05_100.8 gw_assign cost: 8116
+file: mac/rudy/pw05_100.9 random_assign: 6785
+file: mac/rudy/pw05_100.9 greedy_assign cost: 7691
+file: mac/rudy/pw05_100.9 gw_assign cost: 7897
+file: mac/rudy/pw09_100.0 random_assign: 12360
+file: mac/rudy/pw09_100.0 greedy_assign cost: 13193
+file: mac/rudy/pw09_100.0 gw_assign cost: 13355
+file: mac/rudy/pw09_100.1 random_assign: 12146
+file: mac/rudy/pw09_100.1 greedy_assign cost: 13047
+file: mac/rudy/pw09_100.1 gw_assign cost: 13198
+file: mac/rudy/pw09_100.2 random_assign: 12337
+file: mac/rudy/pw09_100.2 greedy_assign cost: 13120
+file: mac/rudy/pw09_100.2 gw_assign cost: 13275
+file: mac/rudy/pw09_100.3 random_assign: 12589
+file: mac/rudy/pw09_100.3 greedy_assign cost: 13195
+file: mac/rudy/pw09_100.3 gw_assign cost: 13467
+file: mac/rudy/pw09_100.4 random_assign: 12359
+file: mac/rudy/pw09_100.4 greedy_assign cost: 13207
+file: mac/rudy/pw09_100.4 gw_assign cost: 13295
+file: mac/rudy/pw09_100.5 random_assign: 12273
+file: mac/rudy/pw09_100.5 greedy_assign cost: 13278
+file: mac/rudy/pw09_100.5 gw_assign cost: 13403
+file: mac/rudy/pw09_100.6 random_assign: 12350
+file: mac/rudy/pw09_100.6 greedy_assign cost: 13241
+file: mac/rudy/pw09_100.6 gw_assign cost: 13435
+file: mac/rudy/pw09_100.7 random_assign: 12086
+file: mac/rudy/pw09_100.7 greedy_assign cost: 13147
+file: mac/rudy/pw09_100.7 gw_assign cost: 13134
+file: mac/rudy/pw09_100.8 random_assign: 12136
+file: mac/rudy/pw09_100.8 greedy_assign cost: 13160
+file: mac/rudy/pw09_100.8 gw_assign cost: 13477
+file: mac/rudy/pw09_100.9 random_assign: 12324
+file: mac/rudy/pw09_100.9 greedy_assign cost: 13232
+file: mac/rudy/pw09_100.9 gw_assign cost: 13453
