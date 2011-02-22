@@ -1,16 +1,15 @@
 function [s, c]=SDPrelaxation(W)
 
-n = size(W);
+[n, ~] = size(W);
 
-cvx_begin
-    variable X(n, n) symmetric
+cvx_begin sdp
+    variable X(n,n) symmetric
     minimize ( trace(W*X) )
-    subject to
-        diag(X) == 1;
-        X >= 0;
-
+    diag(X) == 1;
+    X >= 0;
 cvx_end
 
 V = chol(X, 'lower');
+s = sign(V*randn(n,1));
 
 c = calcCost(W, s);
