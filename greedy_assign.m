@@ -3,7 +3,17 @@ function [s, c]=greedy_assign(W)
 n = size(W);
 s = zeros(n, 1);
 for i = 1:n 
-    % ...
+    dc_pos = 0;
+    dc_neg = 0;
+    for j = 1:(i-1)
+        dc_pos = dc_pos + W(i, j)*(1-s(j)*1);
+        dc_neg = dc_neg + W(i, j)*(1-s(j)*(-1));
+    end
+    if(dc_pos >= dc_neg)
+        s(i) = 1;
+    else
+        s(i) = -1;
+    end
 end
 
 c = calcCost(W, s);
