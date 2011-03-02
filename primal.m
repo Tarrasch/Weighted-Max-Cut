@@ -10,7 +10,7 @@ cvx_begin sdp
     X >= 0;
 cvx_end
 
-c = cvx_optval;
+c = -cvx_optval;
 
 end
 

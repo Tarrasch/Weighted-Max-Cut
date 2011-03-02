@@ -1,0 +1,4 @@
+file: small_W.txt gives (P)=-64 and (D)=-64.  (ratio = 1)
+file: small_W.txt gives (P)=-64 and (D)=-64.  (ratio = 1)
+file: small_W.txt gives (P)=-64 and (D)=-64.  (ratio = 1)
+file: small_W.txt gives (P)=64 and (D)=64.  (ratio = 1)
