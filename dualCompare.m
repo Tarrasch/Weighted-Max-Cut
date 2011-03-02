@@ -1,4 +1,4 @@
-function [result]=template(fileName, logFile)
+function []=dualCompare(fileName, logFile)
 % Example: result = problem2('mac/rudy/pw01_100.7', 'latest.log');
 %
 % You have to implement:
@@ -16,28 +16,11 @@ edge_list = data(2:(nE+1), :);
 W = sparse(edge_list(:, 1), edge_list(:, 2), edge_list(:, 3), nV, nV, nE); 
 W = 0.5 * (W+W'); 
 
-%% Random assignment s = assignment, c = cost
-%% This function has to be implemented 
-cUpper
+%% Now we calculate the c-values
+cPrimal = primal(W);
+cDual   = dual(W);
 
-%% Greedy assignment
-%% This function has to be implemented 
-[s, c] = greedy_assign(W); 
-fprintf(fid, 'file: %s greedy_assign cost: %g\n', fileName, c);
-result(2).method = 'greedy_assign'; result(2).assignment = s; result(2).cost = c;
-
-%% SDP formulation
-%% This function has to be implemented 
-[s, c] = gw_assign(W); 
-fprintf(fid, 'file: %s gw_assign cost: %g\n', fileName,  c);
-result(3).method = 'gw_assign'; result(3).assignment = s; result(3).cost = c;
-
-%% HIER SDP formulation
-%% This function has to be implemented
-% result(4).method = 'hier_sdp'; % result(4).assignment = s2; % result(4).cost = c2 ; 
-% fprintf(fid, 'file: %s hier_sdp: %g\n', fileName,  c2);
-
-
+fprintf(fid, 'file: %s gives (P)=%g and (D)=%g.  (ratio = %g)\n', fileName, cPrimal, cDual, cDual/cPrimal);
 
 fclose(fid);
 end
