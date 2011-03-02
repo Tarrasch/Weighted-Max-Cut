@@ -4,9 +4,10 @@ function [ c ] = dual( W )
 [n, ~] = size(W);
 
 cvx_begin sdp
-    variable gamma(n)
-    maximize ( -sum(gamma) )
-    W + diag(gamma) >= 0;
+    variable myGamma(n)
+    maximize ( -sum(myGamma) )
+    
+    W + diag(myGamma) >= 0;
 cvx_end
 
 c = cvx_optval;
